@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #01210b30 ;
+    text-align: center;
+}
+
+.menu {
+    background-color: #817b7b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.nav-button {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #f9fcf2;
+    font-weight: bold;
+    background-color: #222222;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #007a3d;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    z-index: 10;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.dropdown a:hover {
+    background: #f1f1f1;
+}
+
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+
+.left, .right {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.center {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+
+.text-container {
+    max-width: 90%;
+    padding-bottom: 20px;
+}
+.side-image {
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+    margin: 5px;
+}
+.fixed-image { width: 280px;
+    height: 275px;
+    object-fit: cover;
+    width: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+h1{
+    font-size: 40px;
+    font-family: Georgia;
+    font-weight: bolder;
+}
+h2{
+    font-size: 20px;
+    font-family: Georgia;
+    font-weight: bolder;
+}
+h3{
+ font-size: 18px;
+ font-weight: bold; 
+ font-family: Times;
+}
+h1,h2{
+    margin: 0;
+    padding: 0;   
+}
+h1, .menu {
+    margin: 0;
+    padding: 0;
+}
